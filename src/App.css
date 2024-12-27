@@ -1,0 +1,143 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+
+.movie-list, .watch-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.movie-item, .watch-list .movie-card {
+  width: 150px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.movie-item:hover, .watch-list .movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-item img, .watch-list .movie-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.movie-item h3, .watch-list .movie-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-item button {
+  background: #007bff;
+}
+
+.movie-item button:hover {
+  background: #0056b3;
+}
+
+.watch-list .movie-card button {
+  background: #ff6347;
+}
+
+.watch-list .movie-card button:hover {
+  background: #ff4500;
+}
+
+
+.rating-stars {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #ccc;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star.filled,
+.star:hover {
+  color: gold;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content button {
+  background: #007bff;
+}
+
+.modal-content button:hover {
+  background: #0056b3;
+}
+
+.modal-content .cancel-btn {
+  background: #f44336;
+}
+
+.modal-content .cancel-btn:hover {
+  background: #e53935;
+}
